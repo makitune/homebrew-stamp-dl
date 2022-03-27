@@ -8,6 +8,12 @@ class StampDl < Formula
   sha256 "528b2bd12c33afe97512ec9054d2ebed7de5d557c7987590d8bbd749a1efcf31"
   license "MIT"
 
+  bottle do
+    root_url "https://github.com/makitune/stamp-dl/releases/download/v0.1.0/"
+    sha256 cellar: :any_skip_relocation, darwin_arm64:  "3d821eb61cb3c1787aaaf62253bed1fe54de54a86cec531f2e0eea5e53c37d26"
+    sha256 cellar: :any_skip_relocation, darwin_amd64:  "69121568dc86e4ee13ed72b9b13e5a7fcd175315097fda850d049578e3467408"
+  end
+
   depends_on "go" => :build
 
   def install
